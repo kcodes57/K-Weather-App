@@ -3,46 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata"
+    />
     <title>K Weather App</title>
-      </head>
+  </head>
   <body>
     <div class="climate-app">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
-        <input type="submit" value="Search" class="search-form-button" />
-      </form>
-    </header>
-    <main>
-      <h1>Paris</h1>
-      <p>
-        <div>
-          Tuesday 11:13, broken clouds
-          <br />
-          Humidity: 59%, Wind: 6.69km/h
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 11:13, broken clouds
+              <br />
+              Humidity: <strong>59%</strong>, Wind: <strong>6.69km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temp">⛅ 12°C</div>
         </div>
-        
-      </p>
-      <div>
-        ⛅ 12°C
-      </div>
-      
-    </main>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/kcodes57" target="_blank">Kirsten McIntyre</a>
-      is
-      <a href="https://github.com/kcodes57/K-Weather-App" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and website hosted
-      <a href="https://k-shecodes-weather-app.netlify.app/" target="_blank"
-        >on Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/kcodes57" target="_blank"
+          >Kirsten McIntyre</a
+        >
+        is
+        <a href="https://github.com/kcodes57/K-Weather-App" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and website hosted
+        <a href="https://k-shecodes-weather-app.netlify.app/" target="_blank"
+          >on Netlify</a
+        >
+      </footer>
     </div>
   </body>
 </html>
