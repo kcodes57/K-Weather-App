@@ -1,5 +1,9 @@
 body {
   background-color: #f9f7fe;
+
+  div:nth-child(1) {
+    font-family: "Crimson Pro", serif;
+  }
 }
 .climate-app {
   background: white;
