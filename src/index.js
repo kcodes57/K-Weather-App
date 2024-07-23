@@ -3,8 +3,7 @@ function refreshWeatherData(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let iconElement = document.querySelector("#icon");
-  let iconImage = `<img src="${response.data.condition.icon_url}" alt=""/>`;
-  iconElement.innerHTML = iconImage;
+
   console.log(iconImage);
   let temperatureElement = document.querySelector("#temp");
   let timeElement = document.querySelector("#time");
@@ -13,6 +12,7 @@ function refreshWeatherData(response) {
   let city = response.data.city;
   let date = new Date(response.data.time * 1000);
   let description = response.data.condition.description;
+  let iconImage = `<img src="${response.data.condition.icon_url}" alt=""/>`;
   let temp = Math.round(response.data.temperature.current);
   let humidity = response.data.temperature.humidity;
   let wind = response.data.wind.speed;
@@ -21,6 +21,7 @@ function refreshWeatherData(response) {
   cityElement.innerHTML = city;
   descriptionElement.innerHTML = description;
   humidityElement.innerHTML = `${humidity}%`;
+  iconElement.innerHTML = iconImage;
   temperatureElement.innerHTML = temp;
   timeElement.innerHTML = formateDate(date);
   windElement.innerHTML = ` ${wind} km/h`;
