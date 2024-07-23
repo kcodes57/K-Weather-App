@@ -28,7 +28,10 @@ main {
   font-weight: 500;
   font-size: 18px;
 }
-.weather-app-details strong {
+#humidity {
+  color: #f65292;
+}
+#wind {
   color: #f65292;
 }
 
