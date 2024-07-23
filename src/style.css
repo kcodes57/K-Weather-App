@@ -72,11 +72,13 @@ header {
   display: flex;
 }
 .weather-app-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 75px;
+  height: 75px;
+  margin-top: 8px;
 }
 .weather-app-temp {
   font-size: 80px;
+  line-height: 80px;
   font-weight: bold;
   margin-left: 10px;
 }
