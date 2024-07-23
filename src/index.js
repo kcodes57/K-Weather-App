@@ -3,17 +3,19 @@ function refreshWeatherData(response) {
   let descriptionElement = document.querySelector("#description");
   let cityElement = document.querySelector("#city");
   let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
   let city = response.data.city;
   let description = response.data.condition.description;
   let temp = Math.round(response.data.temperature.current);
   let humidity = response.data.temperature.humidity;
-  temperatureElement.innerHTML = temp;
+  let wind = response.data.wind.speed;
 
   console.log(response.data);
-
-  humidityElement.innerHTML = `${humidity}%`;
   cityElement.innerHTML = city;
   descriptionElement.innerHTML = description;
+  humidityElement.innerHTML = `${humidity}%`;
+  temperatureElement.innerHTML = temp;
+  windElement.innerHTML = ` ${wind} km/h`;
 }
 
 function searchCity(city) {
