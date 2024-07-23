@@ -4,7 +4,6 @@ function refreshWeatherData(response) {
   let humidityElement = document.querySelector("#humidity");
   let iconElement = document.querySelector("#icon");
 
-  console.log(iconImage);
   let temperatureElement = document.querySelector("#temp");
   let timeElement = document.querySelector("#time");
   let windElement = document.querySelector("#wind");
@@ -17,7 +16,6 @@ function refreshWeatherData(response) {
   let humidity = response.data.temperature.humidity;
   let wind = response.data.wind.speed;
 
-  console.log(response.data);
   cityElement.innerHTML = city;
   descriptionElement.innerHTML = description;
   humidityElement.innerHTML = `${humidity}%`;
