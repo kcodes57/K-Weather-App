@@ -87,7 +87,7 @@ header {
   margin-top: 16px;
   font-size: 30px;
 }
-.weather-forecasts {
+#forecast {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
