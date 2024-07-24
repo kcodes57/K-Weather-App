@@ -103,7 +103,7 @@ header {
 
 .weather-forecast-icon {
   text-align: center;
-  font-size: 38px;
+  width: 100%;
   line-height: 20px;
 }
 .weather-forecast-temperatures {

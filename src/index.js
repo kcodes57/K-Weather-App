@@ -67,21 +67,26 @@ function getForecast(city) {
 function displayForecast(response) {
   console.log(response.data);
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `<div class="weather-forecast">
             <div class="weather-forecast-day">
-              <div class="weather-forecast-date">${day}</div>
-              <div class="weather-forecast-icon">🌤️</div>
+              <div class="weather-forecast-date">Tue</div>
+              <div >
+                <img src="${
+                  day.condition.icon_url
+                }" class="weather-forecast-icon">
+              </div>
               <div class="weather-forecast-temperatures">
                 <div class="weather-forecast-temperature">
-                  <strong>15°</strong>
+                  <strong>${Math.round(day.temperature.maximum)}</strong>
                 </div>
-                <div class="weather-forecast-temperature">9°</div>
+                <div class="weather-forecast-temperature">${Math.round(
+                  day.temperature.minimum
+                )}</div>
               </div>
             </div>
             </div>`;
